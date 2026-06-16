@@ -1,0 +1,175 @@
+/* Tablet */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        gap: 0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-menu li {
+        width: 100%;
+    }
+    
+    .nav-menu a {
+        display: block;
+        padding: 1rem;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .navbar-brand span {
+        font-size: 1.2rem;
+    }
+    
+    .main-content {
+        padding: 1rem;
+    }
+    
+    section h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .dashboard-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    
+    .card {
+        padding: 1rem;
+    }
+    
+    .card-icon {
+        font-size: 2rem;
+    }
+    
+    .card h3 {
+        font-size: 1rem;
+    }
+    
+    .card p {
+        font-size: 1.5rem;
+    }
+    
+    .weather-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .gps-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .map-container {
+        min-height: 300px;
+    }
+    
+    .profile-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .sos-button {
+        width: 120px;
+        height: 120px;
+        font-size: 1.2rem;
+    }
+    
+    .alerts-filter {
+        flex-direction: column;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .navbar-brand span {
+        display: none;
+    }
+    
+    .main-content {
+        padding: 0.5rem;
+    }
+    
+    section h1 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+    
+    .card {
+        padding: 0.8rem;
+    }
+    
+    .card-icon {
+        font-size: 1.5rem;
+    }
+    
+    .card h3 {
+        font-size: 0.9rem;
+    }
+    
+    .card p {
+        font-size: 1.3rem;
+    }
+    
+    .weather-details {
+        gap: 0.5rem;
+    }
+    
+    .detail-item {
+        flex-direction: column;
+        gap: 0.3rem;
+        padding: 0.6rem;
+    }
+    
+    .gps-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .map-container {
+        min-height: 250px;
+    }
+    
+    .sos-button {
+        width: 100px;
+        height: 100px;
+        font-size: 1rem;
+        margin: 1rem auto;
+    }
+    
+    .notification {
+        min-width: calc(100% - 40px);
+        margin: 0 20px;
+    }
+    
+    .form-group input,
+    .alerts-filter select,
+    .alerts-filter button {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.7rem 1rem;
+        font-size: 0.95rem;
+    }
+}
